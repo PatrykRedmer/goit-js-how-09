@@ -1,0 +1,2 @@
+function getRandomHexColor(){return"#".concat(Math.floor(16777215*Math.random()).toString(16))}var intervalId,startButton=document.querySelector("[data-start]"),stopButton=document.querySelector("[data-stop]");startButton.addEventListener("click",(function(){intervalId=setInterval((function(){document.body.style.backgroundColor=getRandomHexColor()}),1e3),startButton.disabled=!0})),stopButton.addEventListener("click",(function(){clearInterval(intervalId),startButton.disabled=!1}));
+//# sourceMappingURL=01-color-switcher.bc0b2900.js.map
